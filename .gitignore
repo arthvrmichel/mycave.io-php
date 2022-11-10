@@ -1,4 +1,7 @@
+###> PHPStorm config folder ###
 .idea/
+###< PHPStorm config folder ###
+
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
