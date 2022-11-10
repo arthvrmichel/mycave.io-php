@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
 use DateTimeInterface;
+use Doctrine\DBAL\Types\DateType;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -35,16 +36,16 @@ class Console
     #[Assert\Type(Edition::class)]
     private Edition $edition;
 
-    #[ORM\Column]
-    #[Assert\Type('DateTimeInterface')]
+    #[ORM\Column(type: 'date')]
+    #[Assert\Type(DateType::class)]
     private ?DateTimeInterface $releaseDate = null;
 
     #[ORM\Column]
     #[Assert\Type('int')]
     private ?int $buyingPrice = null;
 
-    #[ORM\Column]
-    #[Assert\Type('DateTimeInterface')]
+    #[ORM\Column(type: 'date')]
+    #[Assert\Type(DateType::class)]
     private ?DateTimeInterface $buyingDate = null;
 
     public function getId(): int
