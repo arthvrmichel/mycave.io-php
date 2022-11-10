@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '327adf316c06c36282e6b8c661a88004a9219885',
+        'reference' => '1e42473dd6b2cf9f4ae210a799133ff75a38aac3',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '327adf316c06c36282e6b8c661a88004a9219885',
+            'reference' => '1e42473dd6b2cf9f4ae210a799133ff75a38aac3',
             'dev_requirement' => false,
         ),
         'api-platform/core' => array(
@@ -774,6 +774,15 @@
             'aliases' => array(),
             'reference' => '8fc1ffe753948c47a103a809cdd6a4a8458b3254',
             'dev_requirement' => false,
+        ),
+        'symfony/maker-bundle' => array(
+            'pretty_version' => 'v1.47.0',
+            'version' => '1.47.0.0',
+            'type' => 'symfony-bundle',
+            'install_path' => __DIR__ . '/../symfony/maker-bundle',
+            'aliases' => array(),
+            'reference' => 'e607f129d29a6c1e9a9e1ef3d229d653311d58f3',
+            'dev_requirement' => true,
         ),
         'symfony/password-hasher' => array(
             'pretty_version' => 'v6.1.3',
